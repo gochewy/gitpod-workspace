@@ -18,4 +18,4 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag gochewy/gitpod-workspace:${{github.ref_name}}
       - name: Push the docker image
-        run: docker push ephemerecreative/gitpod-workspace:${{github.ref_name}}
+        run: docker push gochewy/gitpod-workspace:${{github.ref_name}}
